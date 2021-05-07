@@ -1,15 +1,6 @@
 ### Hi there, I'm Keksi 👋
 <br />
 <p align="left"> <img src="https://img.shields.io/github/followers/Keksiuwu?style=flat-square" alt="Keksi" /> </p>
-<br />
-
-### Spotify Playing :headphones:
-
-[<img src="https://spotify-now-playing-keksiuwu.vercel.app/api/spotify-playing" alt="Keksi Spotify Playing" width="350" />](https://open.spotify.com/user/zxg19i8o7vlh81yraj3pwbeqx)
-
-
-
-<br />
 
 ### Languages and Tools:
 
