@@ -1,6 +1,6 @@
 ### Hi there, I'm Keksi 👋
 <br />
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Keksiuwu" alt="Keksi" /> </p>
+<p align="left"> <img src="https://img.shields.io/github/followers/Keksiuwu?style=flat-square" alt="Keksi" /> </p>
 <br />
 
 ### Spotify Playing :headphones:
