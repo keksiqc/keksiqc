@@ -5,7 +5,7 @@
 
 ### Spotify Playing :headphones:
 
-[<img src="https://spotify-now-playing-keksiuwu.vercel.app/api/spotify" alt="Keksi Spotify Playing" width="350" />](https://open.spotify.com/user/zxg19i8o7vlh81yraj3pwbeqx)
+[<img src="https://spotify-now-playing-keksiuwu.vercel.app/api/spotify-playing" alt="Keksi Spotify Playing" width="350" />](https://open.spotify.com/user/zxg19i8o7vlh81yraj3pwbeqx)
 
 
 
