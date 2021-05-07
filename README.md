@@ -1,6 +1,6 @@
 ### Hi there, I'm Keksi 👋
 <br />
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=Malik-4444&label=Profile%20views&color=129e00&style=plastic" alt="Malik-4444" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=Keksiuwu" alt="Keksi" /> </p>
 <br />
 
 ### Spotify Playing :headphones:
