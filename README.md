@@ -15,7 +15,7 @@
 
 ## Stats 📈
 
-<img alt = "GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Keksiuwu&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&text_color=8B948D&bg_color=0D1117&theme=dark">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiuwu&layout=compact&theme=dark"<p align="center">
+<img alt = "GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Keksiuwu&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&bg_color=0D1117&theme=dark">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiuwu&layout=compact&bg_color=0D1117&theme=dark">
 
 
