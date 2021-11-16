@@ -5,8 +5,8 @@
 <a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" alt="Python"></a>
 <a href="https://www.w3schools.com/js/default.asp"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" alt="JavaScript"></a>
 <a href="https://nodejs.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" alt="Node.js"></a>
-<a href="https://julialang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/julia/julia-original.svg" width="20" alt="Julia"></a>
-<a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="20" alt="C#"></a>
+<a href="https://julialang.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/julia/julia-original.svg" width="40" alt="Julia"></a>
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" alt="C#"></a>
 
 ## Tools 🖥️
 <a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" width="40" alt="VSCode"></a>
