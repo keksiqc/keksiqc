@@ -15,7 +15,7 @@
 <hr>
 
 
-<img width=500; src="https://github-readme-stats.vercel.app/api?username=Keksiuwu&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&bg_color=0D1117&theme=dark">
-<img width=500; src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiuwu&layout=compact&bg_color=0D1117&theme=dark">
+<img width=500; src="https://github-readme-stats.vercel.app/api?username=Keksiqc&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&bg_color=0D1117&theme=dark">
+<img width=500; src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiqc&layout=compact&bg_color=0D1117&theme=dark">
 
 
