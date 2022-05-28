@@ -1,4 +1,6 @@
-<h1 align="center"><pre>Keksi♡</pre></h1>
+<div align="center">
+ <img src="https://github-widgetbox.vercel.app/api/profile?username=Keksiqc&data=followers,repositories,stars,commits" />
+</div>
 
 <h2 align="center">What I use</h2>
 
