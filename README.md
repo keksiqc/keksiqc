@@ -5,41 +5,27 @@
 <h2 align="center">What I use</h2>
 
 <div align="center">
- <code>
-  <a href="https://www.python.org/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" height="40" alt="Python">
-  </a>
- </code>
- <code>
-  <a href="https://www.w3schools.com/js/default.asp" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" height="40" alt="JavaScript">
-  </a>
- </code>
- <code>
-  <a href="https://www.typescriptlang.org/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" height="40" alt="TypeScript">
-  </a>
- </code>
- <code>
-  <a href="https://reactjs.org/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/3cc47643ba2a2a87819fdd312552b0e79743ce98/icons/react/react-original.svg" height="40" alt="React">
-  </a>
- </code>
- <code>
-  <a href="https://nextjs.org/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/3cc47643ba2a2a87819fdd312552b0e79743ce98/icons/nextjs/nextjs-original.svg" height="40" alt="Next.js">
-  </a>
- </code>
- <code>
-  <a href="https://www.mongodb.com/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/3cc47643ba2a2a87819fdd312552b0e79743ce98/icons/mongodb/mongodb-original.svg" height="40" alt="MongoDB">
-  </a>
- </code>
- <code>
-  <a href="https://code.visualstudio.com/" target="_blank">
-   <img src="https://raw.githubusercontent.com/devicons/devicon/3cc47643ba2a2a87819fdd312552b0e79743ce98/icons/vscode/vscode-original.svg" height="40" alt="VSCode">
-  </a>
- </code>
+ <a href="https://www.python.org/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/Python-Dark.svg" height="40" alt="Python">
+ </a>
+ <a href="https://www.w3schools.com/js/default.asp" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/JavaScript.svg" height="40" alt="JavaScript">
+ </a>
+ <a href="https://www.typescriptlang.org/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/TypeScript.svg" height="40" alt="TypeScript">
+ </a>
+ <a href="https://reactjs.org/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/React-Dark.svg" height="40" alt="React">
+ </a>
+ <a href="https://nextjs.org/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/NextJS-Dark.svg" height="40" alt="Next.js">
+ </a>
+ <a href="https://www.mongodb.com/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/MongoDB.svg" height="40" alt="MongoDB">
+ </a>
+ <a href="https://code.visualstudio.com/" target="_blank">
+  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/9904dfdfef9bf5d8ae649a85fcb531b5892b0796/icons/VSCode-Dark.svg" height="40" alt="VSCode">
+ </a>
 </div>
 
 
