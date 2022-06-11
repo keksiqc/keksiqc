@@ -43,7 +43,11 @@
 <h2 align="center">Stats</h2>
 
 <div align="center">
- <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&bg_color=0D1117&theme=dark"> <br />
+ <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&show_icons=true&hide=issues&icon_color=C9D1D9&hide_border=false&title_color=C9D1D9&bg_color=0D1117&theme=dark"> 
+ <br />
  <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiqc&layout=compact&bg_color=0D1117&theme=dark">
+ <br />
+ <br />
+ <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true">
 </div>
 
