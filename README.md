@@ -42,7 +42,7 @@
 
 <h2 align="center">What I do</h2>
 <div align="center">
- <img src="https://lanyard.cnrad.dev/api/527147599942385674">
+ <img href="https://discord.com/users/527147599942385674" src="https://lanyard.cnrad.dev/api/527147599942385674">
 </div>
 
 <h2 align="center">Stats</h2>
