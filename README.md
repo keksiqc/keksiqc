@@ -43,7 +43,7 @@
 <h2 align="center">What I do</h2>
 <div align="center">
  <a href="https://discord.com/users/527147599942385674" target="_blank">
-  <img src="https://lanyard.cnrad.dev/api/527147599942385674">
+  <img src="https://lanyard.cnrad.dev/api/527147599942385674?bg=141321">
  </a>
 </div>
 
@@ -52,7 +52,9 @@
 <div align="center">
  <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=false&count_private=false"> 
  <br />
- <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=false&count_private=false">
+ <img width="500" src="https://github-readme-stats.vercel.app/api/wakatime?username=Keksi&theme=radical&hide_border=true">
+ <br />
+ <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=false&count_private=false">
  <br />
  <br />
  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true">
