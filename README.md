@@ -1,5 +1,5 @@
 <div align="center">
- <img src="https://github-widgetbox.vercel.app/api/profile?username=Keksiqc&data=followers,repositories,stars,commits" />
+ <pre fontSize="50">Keksi♡</pre>
 </div>
 
 <h2 align="center">What I use</h2>
@@ -50,11 +50,11 @@
 <h2 align="center">Stats</h2>
 
 <div align="center">
- <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=false&count_private=false"> 
+ <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=true&count_private=true"> 
  <br />
  <img width="500" src="https://github-readme-stats.vercel.app/api/wakatime?username=Keksi&theme=radical&hide_border=true">
  <br />
- <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=false&count_private=false">
+ <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=true&count_private=true">
  <br />
  <br />
  <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true">
