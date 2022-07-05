@@ -1,5 +1,5 @@
 <div align="center">
- <pre fontSize="50">Keksi♡</pre>
+ <pre>Keksi♡</pre>
 </div>
 
 <h2 align="center">What I use</h2>
