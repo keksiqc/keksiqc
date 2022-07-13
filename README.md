@@ -1,5 +1,5 @@
 <div align="center">
- <pre>Keksi♡</pre>
+ <h1>Keksi♡</h1>
 </div>
 
 <h2 align="center">What I use</h2>
@@ -51,8 +51,6 @@
 
 <div align="center">
  <img width="500" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=true&count_private=true"> 
- <br />
- <img width="500" src="https://github-readme-stats.vercel.app/api/wakatime?username=Keksi&theme=radical&hide_border=true">
  <br />
  <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=true&count_private=true">
  <br />
