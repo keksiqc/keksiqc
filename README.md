@@ -1,5 +1,5 @@
 <div align="center">
- <h1>Keksi♡</h1>
+ <img border src="./assets/keksiqc_README.md.png">
 </div>
 
 <h2 align="center">What I use</h2>
@@ -55,6 +55,6 @@
  <img width="500" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=true&count_private=true">
  <br />
  <br />
- <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true">
+ <img src="./assets/gray_cat_on_line.svg">
 </div>
 
