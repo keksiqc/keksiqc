@@ -1,6 +1,6 @@
 <div
     align="center">
-    <img src="./assets/profile.svg">
+    <img width="650px" src="./assets/profile.png">
 </div>
 
 ---
