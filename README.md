@@ -58,14 +58,11 @@
 </div>
 
 ---
-
-
 <div
     align="center">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Keksiqc&theme=radical&hide_border=true&include_all_commits=true&count_private=true">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Keksiqc&theme=radical&layout=compact&hide_border=true&include_all_commits=true&count_private=true">
+    <img src="https://raw.githubusercontent.com/keksiqc/github-stats-transparent/output/generated/overview.svg">
+    <img src="https://raw.githubusercontent.com/keksiqc/github-stats-transparent/output/generated/languages.svg">
 </div>
-
 
 <div
     align="center">
