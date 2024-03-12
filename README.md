@@ -8,7 +8,7 @@
 <div
     align="center">
     <a href="https://discord.com/users/527147599942385674" target="_blank">
-        <img src="https://lanyard.cnrad.dev/api/527147599942385674??borderRadius=10px&animated=:true&bg=282A3682">
+        <img src="https://lanyard.cnrad.dev/api/527147599942385674">
     </a>
 </div>
 
