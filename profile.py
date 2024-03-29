@@ -5,4 +5,4 @@ class Bio(Profile):
     age     = "19"
     country = "Germany"
     email   = "contact@keksi.me"
-    website = "https://keksi.me"
+    website = "https://keksi.dev"
