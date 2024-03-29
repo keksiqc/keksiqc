@@ -1,0 +1,40 @@
+name: Generate Profile Image
+
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Set up Go
+              uses: actions/setup-go@v4
+
+              
+            - uses: actions/cache@v4
+              with:
+                path: ~/go/pkg/mod
+                key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
+                restore-keys: |
+                  ${{ runner.os }}-go-
+                  
+            - name: Install freeze
+              run: go install github.com/charmbracelet/freeze@latest
+
+            - name: Generate Profile Image
+              run: freeze profile.py -o ./assets/profile.png -m 20 --window -r 10 --theme rose-pine
+
+            - name: Commit and push changes
+              run: |
+                git config --global user.name 'github-actions[bot]'
+                git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+                git add assets/profile.png
+                git commit -m "ci: update profile image"
+                git push
