@@ -14,22 +14,14 @@ jobs:
         steps:
             - uses: actions/checkout@v2
 
-            - name: Set up Go
-              uses: actions/setup-go@v4
-
-              
-            - uses: actions/cache@v4
-              with:
-                path: ~/go/pkg/mod
-                key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-                restore-keys: |
-                  ${{ runner.os }}-go-
-                  
-            - name: Install freeze
-              run: go install github.com/charmbracelet/freeze@latest
+            - name: Set up Freeze
+              run: |
+                wget -qO freeze.deb https://github.com/charmbracelet/freeze/releases/download/v0.1.4/freeze_0.1.4_amd64.deb
+                sudo dpkg -i freeze.deb
+                rm freeze.deb
 
             - name: Generate Profile Image
-              run: freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 10 --theme rose-pine --font.ligatures
+              run: freeze profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
 
             - name: Commit and push changes
               run: |
