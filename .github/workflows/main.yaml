@@ -16,7 +16,7 @@ jobs:
 
             - name: Set up Freeze
               run: |
-                wget -qO freeze.deb https://github.com/charmbracelet/freeze/releases/download/v0.1.4/freeze_0.1.4_amd64.deb
+                wget -qO freeze.deb https://github.com/charmbracelet/freeze/releases/download/v0.1.6/freeze_0.1.6_amd64.deb
                 sudo dpkg -i freeze.deb
                 rm freeze.deb
 
