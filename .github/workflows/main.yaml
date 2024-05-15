@@ -25,7 +25,7 @@ jobs:
                 rm freeze.deb
 
             - name: Generate Profile Image
-              run: freeze profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
+              run: freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
 
             - name: Commit and push changes
               run: |
