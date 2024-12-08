@@ -1,11 +1,17 @@
 name: Generate Profile Image
 
-
 on:
     push:
         branches: [main]
     workflow_dispatch:
 
+# Prevent concurrent runs of the same workflow
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+permissions:
+    contents: write
 
 jobs:
     build:
@@ -14,23 +20,32 @@ jobs:
         steps:
             - uses: actions/checkout@v4
 
-            - name: Show Files
-              run: |
-                ls -la
+            - name: Setup Go
+              uses: actions/setup-go@v5
+              with:
+                  go-version: '1.21'
+                  check-latest: true
 
-            - name: Set up Freeze
-              run: |
-                wget -qO freeze.deb https://github.com/charmbracelet/freeze/releases/download/v0.1.6/freeze_0.1.6_amd64.deb
-                sudo dpkg -i freeze.deb
-                rm freeze.deb
+            - name: Install Freeze
+              run: go install github.com/charmbracelet/freeze@latest
 
             - name: Generate Profile Image
-              run: freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
+              run: make image
 
             - name: Commit and push changes
               run: |
+                # Configure git
                 git config --global user.name 'github-actions[bot]'
                 git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-                git add assets/profile.png
-                git commit -m "ci: update profile image"
-                git push
+                
+                # Check if there are any changes
+                if [[ -n "$(git status --porcelain assets/profile.png)" ]]; then
+                    git add assets/profile.png
+                    git commit -m "ci: update profile image"
+                    git push || {
+                        echo "Failed to push changes"
+                        exit 1
+                    }
+                else
+                    echo "No changes to commit"
+                fi
