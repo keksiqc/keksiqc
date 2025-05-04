@@ -24,8 +24,7 @@ jobs:
 
       - name: Generate Profile Image
         run: |
-          mkdir -p assets
-          cat profile.py | freeze -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
+          make
 
       - name: Commit and push changes
         run: |
