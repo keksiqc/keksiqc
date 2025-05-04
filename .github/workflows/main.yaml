@@ -73,8 +73,8 @@ jobs:
           export PYTHONPATH=$GITHUB_WORKSPACE:$PYTHONPATH
           echo "PYTHONPATH is: $PYTHONPATH" # Verify PYTHONPATH is set
 
-          # Execute the freeze command with corrected flag
-          freeze --execute "cat ./profile.py" -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
+          # Execute the freeze command directly with the file
+          freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
 
       - name: Commit and push changes
         run: |
