@@ -5,10 +5,6 @@ on:
     branches: [main]
   workflow_dispatch:
 
-concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
-
 permissions:
   contents: write
 
@@ -18,17 +14,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Download freeze binary
+      - name: Install freeze via .deb package
         run: |
-          curl -LO https://github.com/charmbracelet/freeze/releases/download/v0.2.2/freeze_linux_amd64.tar.gz
-          tar -xzf freeze_linux_amd64.tar.gz
-          chmod +x freeze
+          curl -LO https://github.com/charmbracelet/freeze/releases/download/v0.2.2/freeze_0.2.2_amd64.deb
+          sudo dpkg -i freeze_0.2.2_amd64.deb
 
       - name: Generate Profile Image
         run: |
           mkdir -p assets
-          ./freeze --execute "cat ./profile.py" -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
+          cat profile.py | freeze -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
 
       - name: Commit and push changes
         run: |
