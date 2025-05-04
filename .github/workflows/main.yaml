@@ -18,11 +18,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Ensure profile.py exists and is not empty
         run: |
           if [ ! -s ./profile.py ]; then
             echo "profile.py is missing or empty"
+            exit 1
+          fi
+          
+      - name: Ensure github.py exists and is not empty
+        run: |
+          if [ ! -s ./github.py ]; then
+            echo "github.py is missing or empty"
             exit 1
           fi
 
