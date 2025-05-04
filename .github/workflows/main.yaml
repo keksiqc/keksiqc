@@ -45,7 +45,9 @@ jobs:
         run: go install github.com/charmbracelet/freeze@latest
 
       - name: Generate Profile Image
-        run: make image
+        run: |
+          mkdir -p assets
+          make image
 
       - name: Commit and push changes
         run: |
