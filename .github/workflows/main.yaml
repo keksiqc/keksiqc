@@ -1,51 +1,54 @@
-name: Generate Profile Image
+ name: Generate Profile Image
 
 on:
-    push:
-        branches: [main]
-    workflow_dispatch:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
-# Prevent concurrent runs of the same workflow
 concurrency:
-    group: ${{ github.workflow }}-${{ github.ref }}
-    cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
-    contents: write
+  contents: write
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-        steps:
-            - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-            - name: Setup Go
-              uses: actions/setup-go@v5
-              with:
-                  go-version: '1.21'
-                  check-latest: true
+      - name: Ensure profile.py exists and is not empty
+        run: |
+          if [ ! -s ./profile.py ]; then
+            echo "profile.py is missing or empty"
+            exit 1
+          fi
 
-            - name: Install Freeze
-              run: go install github.com/charmbracelet/freeze@latest
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          check-latest: true
 
-            - name: Generate Profile Image
-              run: make image
+      - name: Install Freeze
+        run: go install github.com/charmbracelet/freeze@latest
 
-            - name: Commit and push changes
-              run: |
-                # Configure git
-                git config --global user.name 'github-actions[bot]'
-                git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-                
-                # Check if there are any changes
-                if [[ -n "$(git status --porcelain assets/profile.png)" ]]; then
-                    git add assets/profile.png
-                    git commit -m "ci: update profile image"
-                    git push || {
-                        echo "Failed to push changes"
-                        exit 1
-                    }
-                else
-                    echo "No changes to commit"
-                fi
+      - name: Generate Profile Image
+        run: make image
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [[ -n "$(git status --porcelain assets/profile.png)" ]]; then
+            git add assets/profile.png
+            git commit -m "ci: update profile image"
+            git push || {
+              echo "Failed to push changes"
+              exit 1
+            }
+          else
+            echo "No changes to commit"
+          fi
