@@ -25,13 +25,12 @@ def main():
     for file in os.listdir():
         print(f"  {file}")
     
-    # Run freeze command
+    # Run freeze command without margin
     cmd = [
         "freeze", 
         "./profile.py", 
         "-o", "./assets/profile.png", 
         "--language", "python", 
-        "-m", "20", 
         "--window", 
         "-r", "8", 
         "--border.width", "1", 
