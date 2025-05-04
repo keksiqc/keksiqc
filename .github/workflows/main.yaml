@@ -1,4 +1,4 @@
- name: Generate Profile Image
+name: Generate Profile Image
 
 on:
   push:
