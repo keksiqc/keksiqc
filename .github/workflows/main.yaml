@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Keep these checks if you like, but the core issue might be in the freeze command execution
+      # Keep these checks, they confirm the file exists
       - name: Ensure profile.py exists and is not empty
         run: |
           if [ ! -s ./profile.py ]; then
@@ -52,7 +52,7 @@ jobs:
 
           # --- Debugging information ---
           echo "Current directory: $(pwd)"
-          ls -la
+          ls -la # Using ls for listing
           echo "Python path: $(which python)"
           echo "Python version: $(python --version)"
           # Verify freeze is installed and accessible
@@ -69,16 +69,13 @@ jobs:
           # --- End Debugging information ---
 
           # Set PYTHONPATH to include the current directory (repository root)
-          # This is equivalent to sys.path.append('.') for external processes
+          # This might still be relevant if freeze uses Python internally
           export PYTHONPATH=$GITHUB_WORKSPACE:$PYTHONPATH
           echo "PYTHONPATH is: $PYTHONPATH" # Verify PYTHONPATH is set
 
-          # Execute the freeze command directly
-          # Using python -c "import sys; sys.path.append('.'); import subprocess; subprocess.run(['freeze', './profile.py', '-o', './assets/profile.png', '--language', 'python', '-m', '20', '--window', '-r', '8', '--border.width', '1', '--theme', 'rose-pine', '--font.ligatures'], check=True)"
-          # This approach explicitly adds '.' to sys.path *within a Python context*
-          # and then runs freeze as a subprocess. This is closer to your Makefile.
-          # Alternatively, you can try running freeze directly after setting PYTHONPATH:
-          freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
+          # Execute the freeze command using --execute "cat ./profile.py"
+          # This runs 'cat ./profile.py' and freezes its output.
+          freeze --execute "cat ./profile.py" -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
 
 
       - name: Commit and push changes
@@ -97,3 +94,4 @@ jobs:
           else
             echo "No changes to commit"
           fi
+          
