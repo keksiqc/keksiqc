@@ -18,63 +18,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      # Keep these checks, they confirm the file exists
-      - name: Ensure profile.py exists and is not empty
+      - name: Download freeze binary
         run: |
-          if [ ! -s ./profile.py ]; then
-            echo "profile.py is missing or empty"
-            exit 1
-          fi
-
-      - name: Ensure github.py exists and is not empty
-        run: |
-          if [ ! -s ./github.py ]; then
-            echo "github.py is missing or empty"
-            exit 1
-          fi
-
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-          check-latest: true
-
-      - name: Install Freeze
-        run: go install github.com/charmbracelet/freeze@latest
+          curl -LO https://github.com/charmbracelet/freeze/releases/download/v0.2.2/freeze_linux_amd64.tar.gz
+          tar -xzf freeze_linux_amd64.tar.gz
+          chmod +x freeze
 
       - name: Generate Profile Image
         run: |
-          # Ensure the assets directory exists
           mkdir -p assets
-
-          # --- Debugging information ---
-          echo "Current directory: $(pwd)"
-          ls -la # Using ls for listing
-          echo "Python path: $(which python)"
-          echo "Python version: $(python --version)"
-          # Verify freeze is installed and accessible
-          if command -v freeze &> /dev/null; then
-              echo "Freeze version: $(freeze --version)"
-          else
-              echo "Freeze command not found!"
-              exit 1
-          fi
-          echo "Contents of profile.py:"
-          cat profile.py
-          echo "Contents of github.py:"
-          cat github.py
-          # --- End Debugging information ---
-
-          # Set PYTHONPATH to include the current directory (repository root)
-          # This might still be relevant if freeze uses Python internally
-          export PYTHONPATH=$GITHUB_WORKSPACE:$PYTHONPATH
-          echo "PYTHONPATH is: $PYTHONPATH" # Verify PYTHONPATH is set
-
-          # Execute the freeze command directly with the file
-          freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
+          ./freeze --execute "cat ./profile.py" -o ./assets/profile.png --language python -m 20 --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
 
       - name: Commit and push changes
         run: |
@@ -83,12 +37,7 @@ jobs:
           if [[ -n "$(git status --porcelain assets/profile.png)" ]]; then
             git add assets/profile.png
             git commit -m "ci: update profile image"
-            # Use --force-with-lease if you anticipate concurrent pushes
-            # or simple git push if conflicts are unlikely.
-            git push || {
-              echo "Failed to push changes"
-              exit 1
-            }
+            git push
           else
             echo "No changes to commit"
           fi
