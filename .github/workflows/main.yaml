@@ -44,16 +44,6 @@ jobs:
       - name: Install Freeze
         run: go install github.com/charmbracelet/freeze@latest
 
-      - name: Update Makefile for CI
-        run: |
-          # Modify the Makefile to use a more robust command for CI environment
-          cat > Makefile << 'EOF'
-image:
-	mkdir -p assets
-	python -c "import sys; sys.path.append('.')"
-	PYTHONPATH=. freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
-EOF
-
       - name: Generate Profile Image
         run: |
           mkdir -p assets
@@ -66,8 +56,8 @@ EOF
           cat profile.py
           echo "Contents of github.py:"
           cat github.py
-          echo "Running make image..."
-          make image
+          echo "Generating profile image directly..."
+          PYTHONPATH=. freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
 
       - name: Commit and push changes
         run: |
