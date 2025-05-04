@@ -56,8 +56,10 @@ jobs:
           cat profile.py
           echo "Contents of github.py:"
           cat github.py
-          echo "Generating profile image directly..."
-          PYTHONPATH=. freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
+          echo "Making generate_profile.py executable..."
+          chmod +x generate_profile.py
+          echo "Running generate_profile.py..."
+          python generate_profile.py
 
       - name: Commit and push changes
         run: |
