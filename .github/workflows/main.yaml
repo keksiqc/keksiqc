@@ -21,13 +21,14 @@ jobs:
         with:
           fetch-depth: 0
 
+      # Keep these checks if you like, but the core issue might be in the freeze command execution
       - name: Ensure profile.py exists and is not empty
         run: |
           if [ ! -s ./profile.py ]; then
             echo "profile.py is missing or empty"
             exit 1
           fi
-          
+
       - name: Ensure github.py exists and is not empty
         run: |
           if [ ! -s ./github.py ]; then
@@ -46,20 +47,39 @@ jobs:
 
       - name: Generate Profile Image
         run: |
+          # Ensure the assets directory exists
           mkdir -p assets
-          ls -la
+
+          # --- Debugging information ---
           echo "Current directory: $(pwd)"
+          ls -la
           echo "Python path: $(which python)"
           echo "Python version: $(python --version)"
-          echo "Freeze version: $(freeze --version)"
+          # Verify freeze is installed and accessible
+          if command -v freeze &> /dev/null; then
+              echo "Freeze version: $(freeze --version)"
+          else
+              echo "Freeze command not found!"
+              exit 1
+          fi
           echo "Contents of profile.py:"
           cat profile.py
           echo "Contents of github.py:"
           cat github.py
-          echo "Making generate_profile.py executable..."
-          chmod +x generate_profile.py
-          echo "Running generate_profile.py..."
-          python generate_profile.py
+          # --- End Debugging information ---
+
+          # Set PYTHONPATH to include the current directory (repository root)
+          # This is equivalent to sys.path.append('.') for external processes
+          export PYTHONPATH=$GITHUB_WORKSPACE:$PYTHONPATH
+          echo "PYTHONPATH is: $PYTHONPATH" # Verify PYTHONPATH is set
+
+          # Execute the freeze command directly
+          # Using python -c "import sys; sys.path.append('.'); import subprocess; subprocess.run(['freeze', './profile.py', '-o', './assets/profile.png', '--language', 'python', '-m', '20', '--window', '-r', '8', '--border.width', '1', '--theme', 'rose-pine', '--font.ligatures'], check=True)"
+          # This approach explicitly adds '.' to sys.path *within a Python context*
+          # and then runs freeze as a subprocess. This is closer to your Makefile.
+          # Alternatively, you can try running freeze directly after setting PYTHONPATH:
+          freeze ./profile.py -o ./assets/profile.png --language python -m 20 --window -r 8 --border.width 1 --theme rose-pine --font.ligatures
+
 
       - name: Commit and push changes
         run: |
@@ -68,6 +88,8 @@ jobs:
           if [[ -n "$(git status --porcelain assets/profile.png)" ]]; then
             git add assets/profile.png
             git commit -m "ci: update profile image"
+            # Use --force-with-lease if you anticipate concurrent pushes
+            # or simple git push if conflicts are unlikely.
             git push || {
               echo "Failed to push changes"
               exit 1
