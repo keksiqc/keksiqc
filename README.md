@@ -22,7 +22,7 @@
 </h3>
 <div
     align="center">
-    <img src="https://skillicons.dev/icons?i=py,ts,js,nodejs,deno,html,css">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,ts,js,nodejs,bun&theme=dark">
 </div>
 
 <h3
@@ -32,7 +32,7 @@
 </h3>
 <div
     align="center">
-    <img src="https://skillicons.dev/icons?i=astro,react,next,vue,nuxt">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=nuxt,vue,next,react,vite,astro&theme=dark">
 </div>
 
 <h3
@@ -42,9 +42,9 @@
 </h3>
 <div
     align="center">
-    <img src="https://skillicons.dev/icons?i=vscode,git,github,githubactions,docker,discord">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,zed,git,github,docker,discord&theme=dark">
     </br>
-    <img src="https://skillicons.dev/icons?i=mongodb,appwrite,supabase,vercel">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=mongodb,postgres,pocketbase,cloudflare,vercel,netlify&theme=dark">
 </div>
 
 <h3
@@ -54,7 +54,7 @@
 </h3>
 <div
     align="center">
-    <img src="https://skillicons.dev/icons?i=figma,photoshop,tailwind">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=figma,tailwind,shadcn&theme=dark">
 </div>
 
 ---
