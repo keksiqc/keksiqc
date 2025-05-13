@@ -1,7 +1,7 @@
 <div align="center">
   <img width="364" src="./assets/profile.png" alt="Profile" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="416" src="https://lanyard.cnrad.dev/api/527147599942385674" alt="Discord Status" />
+  <img width="416" src="https://lanyard.cnrad.dev/api/527147599942385674?borderRadius=8px&bg=191724" alt="Discord Status" />
 </div>
 
 ---
