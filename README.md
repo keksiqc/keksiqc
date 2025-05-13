@@ -1,21 +1,17 @@
-<div
-    align="center">
-    <img width="650px" src="./assets/profile.png">
-</div>
+<table style="border-collapse: collapse; border: none; padding: 0;">
+  <tr>
+    <td style="border: none; padding: 0;" align="left">
+      <img width="410px" src="./assets/profile.png">
+    </td>
+    <td style="border: none; padding: 0;" align="right">
+      <img src="https://lanyard.cnrad.dev/api/527147599942385674">
+    </td>
+  </tr>
+</table>
 
 ---
 
-<div
-    align="center">
-    <a href="https://discord.com/users/527147599942385674" target="_blank">
-        <img src="https://lanyard.cnrad.dev/api/527147599942385674">
-    </a>
-</div>
-
----
-
-
-<h3 
+<h3
     align="center"
     style="font-weight: bold">
     Languages
