@@ -1,13 +1,8 @@
-<table style="border-collapse: collapse; border: none; padding: 0;">
-  <tr>
-    <td style="border: none; padding: 0;" align="left">
-      <img width="410px" src="./assets/profile.png">
-    </td>
-    <td style="border: none; padding: 0;" align="right">
-      <img src="https://lanyard.cnrad.dev/api/527147599942385674">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img align="center" width="364" height="213" src="./assets/profile.png">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img align="center" width="416" height="213" src="https://lanyard.cnrad.dev/api/527147599942385674">
+</div>
 
 ---
 
