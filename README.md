@@ -1,7 +1,7 @@
 <div align="center">
-  <img align="center" width="364" height="213" src="./assets/profile.png">
+  <img align="center" width="364" src="./assets/profile.png">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img align="center" width="416" height="213" src="https://lanyard.cnrad.dev/api/527147599942385674">
+  <img align="center" width="416" src="https://lanyard.cnrad.dev/api/527147599942385674">
 </div>
 
 ---
