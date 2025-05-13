@@ -1,4 +1,4 @@
-assets/profile.png: profile.py
+assets/profile.png:
 	mkdir -p assets
 	cat profile.py | freeze -o assets/profile.png --language python --window --border.radius 8 --border.width 1 --theme rose-pine --font.ligatures
 
