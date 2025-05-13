@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate Profile Image
         run: |
-          make -B
+          make
 
       - name: Commit and push changes
         run: |
