@@ -3,6 +3,9 @@ name: Generate Profile Image
 on:
   push:
     branches: [main]
+    paths:
+      - 'profile.py'
+      - 'Makefile'
   workflow_dispatch:
 
 permissions:
@@ -24,7 +27,7 @@ jobs:
 
       - name: Generate Profile Image
         run: |
-          make -B
+          make
 
       - name: Commit and push changes
         run: |
