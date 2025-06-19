@@ -1,39 +1,15 @@
-<div align="center">
-  <img width="364" src="./assets/profile.png" alt="Profile" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img width="416" src="https://lanyard.cnrad.dev/api/527147599942385674?borderRadius=8px&bg=191724" alt="Discord Status" />
-</div>
-
----
-
-<h3 align="center"><b>Languages</b></h3>
-<div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=go,py,ts,js,nodejs,bun&theme=dark" alt="Languages" />
-</div>
-
-<h3 align="center"><b>Frameworks</b></h3>
-<div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=nuxt,vue,next,react,vite,astro&theme=dark" alt="Frameworks" />
-</div>
-
-<h3 align="center"><b>Tools</b></h3>
-<div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=vscode,zed,git,github,docker,discord&theme=dark" alt="Tools" /><br/>
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=mongodb,postgres,pocketbase,cloudflare,vercel,netlify&theme=dark" alt="Databases & Cloud" />
-</div>
-
-<h3 align="center"><b>Design</b></h3>
-<div align="center">
-  <img src="https://go-skill-icons.vercel.app/api/icons?i=figma,tailwind,shadcn&theme=dark" alt="Design" />
-</div>
-
----
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/keksiqc/github-stats-transparent/output/generated/overview.svg" alt="GitHub Stats" />
-  <img src="https://raw.githubusercontent.com/keksiqc/github-stats-transparent/output/generated/languages.svg" alt="Top Languages" />
-</div>
-
-<div align="center">
-  <img src="./assets/gray_cat_on_line.svg" alt="Gray Cat" />
-</div>
+<table border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td colspan="3" valign="top"><img height="220em" src="./assets/profile.png" alt="Profile" /></td>
+    <td colspan="3" valign="top"><img height="220em" src="https://lanyard.cnrad.dev/api/527147599942385674?borderRadius=8px&bg=12101f" alt="Discord Status" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top"><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=keksiqc&layout=compact&theme=rose_pine&hide_border=true&title_color=c4a7e7&text_color=908caa&bg_color=12101f" alt="Top Languages"/></td>
+    <td colspan="3" valign="top"><img height="180em" src="https://github-readme-stats.vercel.app/api?username=keksiqc&show_icons=true&theme=rose_pine&hide_border=true&title_color=c4a7e7&text_color=908caa&icon_color=9ccfd8&bg_color=12101f" alt="GitHub Stats"/></td>
+  </tr>
+  <tr>
+    <td colspan="6">
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=keksiqc&theme=minimal&hide_border=true&color=c4a7e7&line=9ccfd8&point=31748f&bg_color=12101f" alt="GitHub Activity Graph" style="border-radius: 2px;" />
+    </td>
+  </tr>
+</table>
