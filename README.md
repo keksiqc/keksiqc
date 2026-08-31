@@ -8,7 +8,7 @@
   </tr>
   <tr>
     <td colspan="6">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=keksiqc&theme=minimal&hide_border=true&color=c4a7e7&line=9ccfd8&point=31748f&bg_color=ffffff00" alt="GitHub Activity Graph" style="border-radius: 2px;" />
+      <img src="https://github-readme-activity-graph.keksi.dev/graph?username=keksiqc&theme=minimal&hide_border=true&color=c4a7e7&line=9ccfd8&point=31748f&bg_color=ffffff00" alt="GitHub Activity Graph" style="border-radius: 2px;" />
     </td>
   </tr>
 </table>
